@@ -1,0 +1,22 @@
+name: EnderExtend
+version: '1.0.0'
+main: com.enderextend.EnderExtendPlugin
+api-version: '1.21'
+description: Расширение эндер-сундука на основе групп LuckPerms
+authors: [EnderExtend]
+depend: [LuckPerms]
+
+commands:
+  enderextend:
+    description: Команды плагина EnderExtend
+    usage: /enderextend <reload|info>
+    aliases: [ee]
+    permission: enderextend.admin
+
+permissions:
+  enderextend.admin:
+    description: Доступ к административным командам
+    default: op
+  enderextend.bypass:
+    description: Открыть эндер-сундук без ограничений (6 строк)
+    default: false
